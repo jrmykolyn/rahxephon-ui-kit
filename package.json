@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/jrmykolyn/rahxephon-ui-kit/issues"
   },
-  "homepage": "https://github.com/jrmykolyn/rahxephon-ui-kit#readme"
+  "homepage": "https://github.com/jrmykolyn/rahxephon-ui-kit#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
 }
