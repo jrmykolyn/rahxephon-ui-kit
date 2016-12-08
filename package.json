@@ -1,0 +1,19 @@
+{
+  "name": "rahxephon-ui-kit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrmykolyn/rahxephon-ui-kit.git"
+  },
+  "author": "Jesse R Mykolyn <jrmykolyn@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrmykolyn/rahxephon-ui-kit/issues"
+  },
+  "homepage": "https://github.com/jrmykolyn/rahxephon-ui-kit#readme"
+}
