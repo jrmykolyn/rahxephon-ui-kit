@@ -50,7 +50,7 @@ gulp.task( 'html', function() {
 gulp.task( 'sass', function() {
     console.log( 'INSIDE TASK: `sass`' );
 
-    return gulp.src( PATHS.styles.src + 'styles.scss' )
+    return gulp.src( PATHS.styles.src + '*.scss' )
         .pipe( sass(
             {
                 outputStyle: 'expanded',
