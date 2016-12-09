@@ -13,5 +13,13 @@
 // --------------------------------------------------
 // SELECTORS 
 // --------------------------------------------------
-// Rules, logic, and anything else that can be compiled to "vanilla" CSS goes here.
+* {
+    box-sizing: border-box;
+    letter-spacing: rem( 1 );
+}
 
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
