@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jrmykolyn/rahxephon-ui-kit#readme",
   "devDependencies": {
+    "bourbon": "^4.2.7",
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2"
   }
