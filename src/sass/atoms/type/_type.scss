@@ -1,7 +1,7 @@
 // --------------------------------------------------
 // VARIABLES 
 // --------------------------------------------------
-// Add any SASS variables that are specific to this file here.
+$text: '.rx-text';
 
 
 // --------------------------------------------------
@@ -13,5 +13,11 @@
 // --------------------------------------------------
 // SELECTORS 
 // --------------------------------------------------
-// Rules, logic, and anything else that can be compiled to "vanilla" CSS goes here.
+#{$text}--title {
+    font-size: rem( 72 );
+    font-weight: 700;
+    line-height: 1;
+
+    margin-bottom: rem( 20 );
+}
 

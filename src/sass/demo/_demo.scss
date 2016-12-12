@@ -1,0 +1,22 @@
+body > section {
+    @include size( 100% auto );
+
+    background-color: #FAFAFA;
+    padding: rem( 50 );
+
+    &:nth-child( 2n ) {
+        background-color: #EFEFEF;
+    }
+}
+
+pre {
+    @include size( 100% auto );
+
+    max-width: rem( 550 );
+    background-color: #EFEFEF;
+    border: rem( 1 ) solid #BBB;
+    border-radius: rem( 10 );
+    margin-left: auto;
+    margin-right: auto;
+    padding: rem( 10 )
+}

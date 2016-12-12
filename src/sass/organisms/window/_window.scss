@@ -1,0 +1,88 @@
+// --------------------------------------------------
+// VARIABLES 
+// --------------------------------------------------
+$window: '.rx-window';
+
+
+// --------------------------------------------------
+// PLACEHOLDERS 
+// --------------------------------------------------
+// Write shared styles in placeholder rules here, then extend them from specific selectors below.
+
+
+// --------------------------------------------------
+// SELECTORS 
+// --------------------------------------------------
+#{$window} {
+    @include size( 100% auto );
+    @include position( relative );
+    @include transition( all 0.25s );
+
+    max-width: rem( 550 );
+    background-color: transparent;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    &:hover {
+        @include transform( translateY( -2% ) );
+
+        & > * {
+            box-shadow: rem( 6 ) rem( 6 ) rem( 2 ) rem( 2 ) rgba( getColor( blue ), 0.4 );
+        }
+    }
+}
+
+
+#{$window}__header,
+#{$window}__body {
+    @include transition( all 0.25s );
+
+    box-shadow: rem( 4 ) rem( 4 ) rem( 0 ) rem( 0 ) rgba( getColor( blue ), 0.9 );
+}
+
+
+#{$window}__header {
+    @include size( 100% auto );
+
+    background-color: getColor( yellow );
+    border: rem( 3 ) outset getColor( yellow );
+
+    margin-bottom: rem( 5 );
+    padding: rem( 0 ) rem( 8 );
+
+    font-family: 'Mate', Times, sans-serif; /// TEMP
+    font-size: rem( 30 );
+    line-height: rem( 40 );
+}
+
+
+#{$window}__body {
+    @include size( 100% auto );
+
+    color: getColor( yellow ); /// TEMP
+    background-image: repeating-linear-gradient( 0deg, rgba( getColor( blue--light ), 0.1 ) 0%, rgba( getColor( blue--light ), 0.1 ) 1%, transparent 1%, transparent 2% );
+    background-color: getColor( blue );
+    border: rem( 8 ) outset getColor( yellow );
+    padding: rem( 30 );
+
+    font-family: Helvetica, Arial, sans-serif; /// TEMP
+    text-align: center;
+}
+
+
+#{$window}__body__inner {
+    background-color: rgba( getColor( blue--light ), 0.3 );
+
+    padding: rem( 20 );
+
+    /// TEMP
+    * {
+        font-weight: 500;
+    }
+
+    /// TEMP
+    p {
+        text-align: left;
+    }
+}
