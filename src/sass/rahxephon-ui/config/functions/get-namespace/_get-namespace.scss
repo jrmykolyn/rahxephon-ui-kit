@@ -1,0 +1,16 @@
+/**
+ * Function fetches the specified 'namepspace'(eg. text/string prefix) from the `$namespaceMap` SASS var.
+ *
+ * @param {String} `$namespace` - The namespace to fetch.
+ * @return {String}
+ *
+ * Usage:
+ * color: getColor( black );
+ */
+@function getNamespace( $namespace: default ) {
+  @if global-variable-exists( namespaceMap ) == false {
+    @error 'Whoops! Please ensure that the `$namespaceMap` variable exists.';
+  }
+
+  @return map-get( $namespaceMap, $namespace );
+}
