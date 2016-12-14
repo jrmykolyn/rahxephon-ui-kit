@@ -1,0 +1,6 @@
+/**
+ * ...
+ */
+@function applyNamespace( $selector, $namespace: default ) {
+    @return getNamespace() + $selector;
+}
